@@ -1,0 +1,43 @@
+unlog
+create unlogged table if not exists unlogged_users (
+pk int
+,username text NOT NULL
+,email text NOT NULL
+,PRIMARY KEY (pk)
+,UNIQUE (username)
+);
+
+String built-in functions
+Exercise 1 (Medium):
+Write a query to retrieve the country names along with the first three characters of each country name in uppercase.
+Exercise 2 (Medium):
+Write a query to find the department names that have the word "Sales" in them (case-insensitive).
+Exercise 3 (Medium):
+Write a query to retrieve the email addresses of employees, truncating the domain part and displaying only the username (characters before the "@").
+Exercise 4 (Medium):
+Write a query to capitalize the first letter of each word in the job titles from the jobs table.
+Exercise 5 (Medium):
+Write a query to find the region names that start with the letter "A" (case-insensitive).
+Exercise 6 (High):
+Write a query to concatenate the first name and last name of employees, separated by a comma, and pad the resulting string with dashes ("-") on both sides to make it 30 characters long. I
+Exercise 7 (High):
+Write a query to extract the last two characters of postal codes from the locations table and display them in uppercase.
+Exercise 8 (High):
+Write a query to retrieve the job titles along with the length of each job title (number of characters).
+Exercise 9 (High):
+Write a query to find the grade levels from the job grades table where the highest salary is greater than 8000.
+Exercise 10 (High):
+Write a query to retrieve the first name and last name of employees, along with the position of the letter "a" (case-insensitive) in their last names. If "a" is not present, display -1.
+
+1) Select all countries in region 1
+2) Select all departments in location 1700
+3) Select all employees whose salary is greater than 7000
+4) Select all locations in country UK
+5) Select jobs whose min_salary is 4200
+6)Select all dependents for employee id 205
+7)Select all the employees who have joined after the year 1998
+8) Check whether a job title 'Accountant' exists 
+9)Display the employee first and joining date who have joined between 1999 to 2000
+10) Display the number of years each employee has worked in the company till the current date.
+11) Display the employees first name, last name and the hire date in ascending order
+11) Display the employees first name, last name and the hire date in ascending order
